@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 
 @Component({
@@ -52,6 +53,13 @@ clientsMap={
     name:'Roshi',
     fly:true
   }]
+
+  myObservable =interval(1000);
+  myPromes=new Promise((resolve, reject)=>{
+setTimeout(()=>{
+  resolve('End of promise')
+},3500)
+  });
     
 
 

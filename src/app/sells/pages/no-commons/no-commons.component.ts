@@ -34,5 +34,10 @@ clientsMap={
   deleteClient(){
     this.clients.shift();
   }
+  person={
+    name:'Anastasia',
+    age:'3',
+    address:'Santiago, Chile'
+  }
 
 }

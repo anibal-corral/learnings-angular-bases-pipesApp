@@ -40,4 +40,19 @@ clientsMap={
     address:'Santiago, Chile'
   }
 
+  dbz=[{
+    name:'Goku',
+    fly:true
+  },
+  {
+    name:'Vegeta',
+    fly:true
+  },
+  {
+    name:'Roshi',
+    fly:true
+  }]
+    
+
+
 }

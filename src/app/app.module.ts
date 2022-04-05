@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
+import { SellsModule } from './sells/sells.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,10 @@ import { AppRouterModule } from './app-router.module';
   ],
   imports: [
     BrowserModule,
-    PrimeNgModule,
     SharedModule,
     AppRouterModule,
+    SellsModule,
+    BrowserAnimationsModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

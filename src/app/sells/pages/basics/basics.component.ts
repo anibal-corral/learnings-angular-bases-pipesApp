@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicsComponent implements OnInit {
 
+nameLower:string='anastasia';
+nameUpper:string='ANASTASIA';
+nameEntire:string='anastasia';
+
+date:Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

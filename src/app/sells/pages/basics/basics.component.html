@@ -1,1 +1,73 @@
-<p>basics works!</p>
+<div class="text-layout">
+    <h1>Basics Pipes</h1>
+    <p>
+        Pipes included in Angular - Usually in the Common Module
+    </p>
+</div>
+
+<div class="grid text-layout">
+    <div class="col-4">
+<p-card header="uppercase"
+[subheader]="nameUpper">
+{{nameUpper | uppercase}}
+</p-card>
+
+    </div>
+    <div class="col-4">
+        <p-card header="lowercase"
+[subheader]="nameLower">
+{{nameLower | lowercase}}
+</p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="entire"
+[subheader]="nameEntire">
+{{nameEntire | titlecase}}
+</p-card>
+    </div>
+    
+</div>
+<div class="text-layout">
+    <h1>Dates Pipes</h1>
+    <p>
+        Pipes to manipulate dates.
+    </p>
+</div>
+
+<div class="grid text-layout">
+    <div class="col-6">
+<p-card >
+<ul>
+    <li>date</li>
+    <li>date | date</li>
+    <li>date | date :'short'</li>
+    <li>date | date :'long'</li>
+    <li>date | date :'long'</li>
+</ul>
+<hr>
+<ul>
+    <li>date | date :'long':'GMT-6'</li>
+    <li>date | date :'long':'GMT-5'</li>
+</ul>
+</p-card>
+
+    </div>
+    <div class="col-6">
+        <p-card >
+            <ul>
+                <li>{{date}}</li>
+                <li>{{date | date}}</li>
+                <li>{{date | date :'short'}}</li>
+                <li>{{date | date :'long'}}</li>
+                <li>{{date | date :'long'}}</li>
+            </ul> 
+            <hr>
+<ul>
+    <li>{{date | date :'long':'GMT-6'}}</li>
+    <li>{{date | date :'long':'GMT-5'}}</li>
+    <li>{{date | date :'long':'':'en'}}</li>
+</ul>  
+        </p-card>
+        
+            </div>
+</div>
